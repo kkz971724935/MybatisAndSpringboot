@@ -3,6 +3,10 @@ package com.example.mybatis.po;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author kmz
+ *
+ */
 public class Books implements Serializable {
     private Integer id;
 
