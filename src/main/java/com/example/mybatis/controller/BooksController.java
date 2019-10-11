@@ -5,6 +5,9 @@ import com.example.mybatis.service.BooksService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * @author kmz
+ */
 @RestController
 public class BooksController {
 
@@ -29,6 +32,13 @@ public class BooksController {
     public String getParam(@RequestParam("description") String description,@RequestParam("name") String name){
         String message = name+" say:"+description;
         return message;
+
+    }
+
+    @RequestMapping(value = "/say", method = RequestMethod.GET)
+    public String say(){
+        return "一起玩广顺啊!";
+
     }
 
 }
