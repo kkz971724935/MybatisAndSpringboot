@@ -1,5 +1,6 @@
-package com.example.mybatis;
+package com.example.mybatis.Test;
 
+import com.example.mybatis.MybatisApplication;
 import com.example.mybatis.po.Books;
 import com.example.mybatis.po.BooksExample;
 import com.example.mybatis.service.BooksService;
@@ -25,11 +26,12 @@ public class mybatisTest {
     private BooksService booksService;
 
     @Before
-    public void init(){
+    public void init() {
         System.out.println("测试开始");
     }
+
     @Test
-    public void test(){
+    public void test() {
         BooksExample example = new BooksExample();
 
         example.createCriteria().andPriceEqualTo(123.0).andIdEqualTo(4);
@@ -42,16 +44,16 @@ public class mybatisTest {
         BooksExample example1 = new BooksExample();
 
         example1.createCriteria().andIdEqualTo(5);
-        System.out.println("example 中的数量:"+example.getOredCriteria().get(0).toString());
+        System.out.println("example 中的数量:" + example.getOredCriteria().get(0).toString());
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         System.out.println(booksService.getAll().toString());
     }
 
     @After
-    public void after(){
+    public void after() {
         System.out.println("测试结束");
     }
 }

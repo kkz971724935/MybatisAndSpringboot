@@ -1,4 +1,4 @@
-package com.example.mybatis;
+package com.example.mybatis.Test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +11,8 @@ public class MybatisApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
+
 	}
 
 }
