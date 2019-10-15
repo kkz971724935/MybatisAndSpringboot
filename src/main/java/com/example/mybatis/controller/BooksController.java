@@ -37,7 +37,7 @@ public class BooksController {
 
     @RequestMapping(value = "/say", method = RequestMethod.GET)
     public String say(){
-        return "一起玩广顺啊!";
+        return "一起玩广顺啊!s";
 
     }
 
